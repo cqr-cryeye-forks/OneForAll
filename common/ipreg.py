@@ -134,6 +134,6 @@ class IpRegData(IpRegInfo):
         addr = ''.join(filter(lambda x: x != '0', addr_list[:-1]))
         isp = addr_list[-1]
         if isp == '0':
-            isp = '未知'
+            isp = 'unknown'
         info = {'addr': addr, 'isp': isp}
         return info
